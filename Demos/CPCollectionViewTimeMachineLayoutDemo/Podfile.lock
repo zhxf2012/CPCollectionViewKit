@@ -6,6 +6,10 @@ DEPENDENCIES:
   - CPCollectionViewKit (from `../..`)
   - Reveal-iOS-SDK
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Reveal-iOS-SDK
+
 EXTERNAL SOURCES:
   CPCollectionViewKit:
     :path: "../.."
@@ -14,6 +18,6 @@ SPEC CHECKSUMS:
   CPCollectionViewKit: 0ef29d2e604bd333e0cad2514d3c73809b42e0a7
   Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
 
-PODFILE CHECKSUM: 14cae69c9b8b61670fe917a76d4a1c6f7a8ec898
+PODFILE CHECKSUM: 4cddc5ce593ef3acb3a0464f983efef058861920
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.6.1

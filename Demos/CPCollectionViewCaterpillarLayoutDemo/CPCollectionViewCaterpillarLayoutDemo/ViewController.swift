@@ -38,7 +38,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         colletionView.dataSource = self
         colletionView.delegate = self
         view.addSubview(colletionView)
-        view.sendSubview(toBack: colletionView)
+        view.sendSubviewToBack(colletionView)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

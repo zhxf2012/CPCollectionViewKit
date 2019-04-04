@@ -26,7 +26,7 @@ class ViewController: UIViewController {
             colorsArray.append(randomColor())
         }
         
-        timeMachineLayout = collectionView.collectionViewLayout as! CollectionViewTimeMachineLayout
+        timeMachineLayout = (collectionView.collectionViewLayout as! CollectionViewTimeMachineLayout)
         layoutConfiguration = timeMachineLayout.configuration
         layoutConfiguration.cellSize = CGSize(width: 250, height: 250)
         layoutConfiguration.visibleCount = 6
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     }
 
     func randomColor() -> UIColor {
-        return UIColor.init(colorLiteralRed: Float(arc4random_uniform(256))/255.0, green: Float(arc4random_uniform(256))/255.0, blue: Float(arc4random_uniform(256))/255.0, alpha: 1)
+        return UIColor.init(_colorLiteralRed: Float(arc4random_uniform(256))/255.0, green: Float(arc4random_uniform(256))/255.0, blue: Float(arc4random_uniform(256))/255.0, alpha: 1)
     }
     
     func updateLayout(closure:() -> Void) {

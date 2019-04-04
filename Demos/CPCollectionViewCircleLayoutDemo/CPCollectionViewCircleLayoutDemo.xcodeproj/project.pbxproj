@@ -103,7 +103,6 @@
 				90445CD31E3314C30092EF88 /* Frameworks */,
 				90445CD41E3314C30092EF88 /* Resources */,
 				AF86EBD48EB98781AD9DC09A /* [CP] Embed Pods Frameworks */,
-				4518BB28D9191EFD77809C47 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,7 +125,7 @@
 				TargetAttributes = {
 					90445CD51E3314C30092EF88 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = QPY54Z9HV5;
+						DevelopmentTeam = UYPNG254PD;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,6 +135,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -163,34 +163,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4518BB28D9191EFD77809C47 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CPCollectionViewCircleLayoutDemo/Pods-CPCollectionViewCircleLayoutDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		AF86EBD48EB98781AD9DC09A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CPCollectionViewCircleLayoutDemo/Pods-CPCollectionViewCircleLayoutDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CPCollectionViewKit/CPCollectionViewKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CPCollectionViewKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CPCollectionViewCircleLayoutDemo/Pods-CPCollectionViewCircleLayoutDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CPCollectionViewCircleLayoutDemo/Pods-CPCollectionViewCircleLayoutDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EEAAD92A70119996BE197BCB /* [CP] Check Pods Manifest.lock */ = {
@@ -199,13 +187,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CPCollectionViewCircleLayoutDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -339,12 +330,12 @@
 			baseConfigurationReference = AA83A212FF8A068BED4398BD /* Pods-CPCollectionViewCircleLayoutDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QPY54Z9HV5;
+				DEVELOPMENT_TEAM = UYPNG254PD;
 				INFOPLIST_FILE = CPCollectionViewCircleLayoutDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Parsifal.CPCollectionViewCircleLayoutDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -353,12 +344,12 @@
 			baseConfigurationReference = 5F42011A912C8C7E0E78E732 /* Pods-CPCollectionViewCircleLayoutDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QPY54Z9HV5;
+				DEVELOPMENT_TEAM = UYPNG254PD;
 				INFOPLIST_FILE = CPCollectionViewCircleLayoutDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Parsifal.CPCollectionViewCircleLayoutDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

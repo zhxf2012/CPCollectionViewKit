@@ -34,6 +34,7 @@ class ViewController: UIViewController {
         for _ in 0...19 {
             colorsArray.append(randomColor())
         }
+     
         
         settingView.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
         settingView.isHidden = true
@@ -86,7 +87,7 @@ class ViewController: UIViewController {
     }
     
     func randomColor() -> UIColor {
-        return UIColor.init(colorLiteralRed: Float(arc4random_uniform(256))/255.0, green: Float(arc4random_uniform(256))/255.0, blue: Float(arc4random_uniform(256))/255.0, alpha: 1)
+        return UIColor.init(_colorLiteralRed: Float(arc4random_uniform(256))/255.0, green: Float(arc4random_uniform(256))/255.0, blue: Float(arc4random_uniform(256))/255.0, alpha: 1)
     }
     
     func rotateDirection() -> CardRotationAxis {
